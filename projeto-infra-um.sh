@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Script de criação de estrutura de usuários, diretórios e permissões."
+
 echo "Utilizando mkdir para criar diretórios."
 mkdir /publico
 mkdir /adm
