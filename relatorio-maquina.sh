@@ -12,7 +12,7 @@ echo "Modelo da CPU"
 CPUMODEL=$(cat /proc/cpuinfo |grep "model name"|head -n1| cut -c14-)
 
 echo "Memória total"
-MEMTOTAL=$(expr $(cat proc/meminfo |grep MemTotal|tr -d ' '| cut -d: -f2|tr -d kB) / 1024
+MEMTOTAL=$(expr $(cat proc/meminfo |grep MemTotal|tr -d ' '| cut -d: -f2|tr -d kB) / 1024)
  
 echo "Partições"
 FILESYS=$(df -h|egrep -v '(tmpfs|udev)')
