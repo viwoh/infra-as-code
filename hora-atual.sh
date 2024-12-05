@@ -25,3 +25,7 @@ fi
 if [ $HORA -gt 12 ]
 then
   HORA=$(expr $HORA - 12)
+fi
+
+echo
+echo "A hora atual é: $HORA:$MIN $AMPM"
